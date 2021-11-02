@@ -1,0 +1,28 @@
+<div class="players">
+    <div id="player1">Player 1: X</div>
+    <div id="player2">Player 2: O</div>
+    <div id="game-finished"></div>
+</div>
+<table>
+    <tr>
+        <td *ngFor="let i of indexArray; let index = index" id="{{index+1}}" (click)="cellClicked((index+1).toString())"></td>
+    </tr>
+    <tr>
+        <td *ngFor="let i of indexArray; let index = index" id="{{index+4}}" (click)="cellClicked((index+4).toString())"></td>
+    </tr>
+    <tr>
+        <td *ngFor="let i of indexArray; let index = index" id="{{index+7}}" (click)="cellClicked((index+7).toString())"></td>
+    </tr>
+</table>
+<div class="buttons">
+    <button mat-raised-button (click)="newGameClicked()">New Game</button>
+    <div class="switch-mode-toggle">
+        <span class="material-icons-outlined">wb_sunny</span>
+        <mat-slide-toggle [(ngModel)]="checked" (change)="modeChanged()"></mat-slide-toggle>
+        <span class="material-icons-outlined">dark_mode</span>
+    </div>
+</div>
+<div class="credits">
+    Programmed by Jangin ツ (2021)
+    <br> jangin9rasheed@gmail.com
+</div>

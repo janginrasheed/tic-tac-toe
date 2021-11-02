@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    //--color1: #FCF3CF;
+    --color1: #aac5aa;
+    --color2: #383838;
+    --color3: #777777;
+}
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+html {
+    height: 100%;
+    //overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 1.2rem !important;
+}
+
+.dark-background {
+    background-color: var(--color2);
+    color: white;
+}
